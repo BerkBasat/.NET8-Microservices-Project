@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "1//1lL/sSxa0q+IIibbnT2Dlh2p2NgNqrjWiVSbPHrPWFOet85y908VLT8ItoE7tC42BBlopVnSeIFGpyOVWuA==",
+  "dgSpecHash": "pgvv9in7WrRa8FeRf63UBE4PtvyTPuOv/KebtR1OJ21dfn1udhqlvIIoLa9sP8UZODZNulOGBG3oPCeVNwO1eA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Huawei\\Desktop\\Github\\.NET8-Microservices-Project\\NET8.Microservices.Project\\Ecommerce.Web\\Ecommerce.Web.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Huawei\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }
