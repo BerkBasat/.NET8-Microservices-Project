@@ -4,7 +4,7 @@
 
 #pragma warning disable CA1814 // Prefer jagged arrays over multidimensional
 
-namespace Ecommerce.Services.CouponAPI.Migrations
+namespace Ecommerce.Services.AuthAPI.Migrations
 {
     /// <inheritdoc />
     public partial class SeedCoupon : Migration

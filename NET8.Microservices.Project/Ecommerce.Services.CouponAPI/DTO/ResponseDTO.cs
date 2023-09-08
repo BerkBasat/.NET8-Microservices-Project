@@ -1,4 +1,4 @@
-﻿namespace Ecommerce.Services.CouponAPI.DTO
+﻿namespace Ecommerce.Services.AuthAPI.DTO
 {
     public class ResponseDTO
     {

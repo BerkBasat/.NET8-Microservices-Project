@@ -1,11 +1,11 @@
 ﻿using AutoMapper;
-using Ecommerce.Services.CouponAPI.Data;
-using Ecommerce.Services.CouponAPI.DTO;
-using Ecommerce.Services.CouponAPI.Models;
+using Ecommerce.Services.AuthAPI.Data;
+using Ecommerce.Services.AuthAPI.DTO;
+using Ecommerce.Services.AuthAPI.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Ecommerce.Services.CouponAPI.Controllers
+namespace Ecommerce.Services.AuthAPI.Controllers
 {
     [Route("api/coupon")]
     [ApiController]

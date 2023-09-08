@@ -2,7 +2,7 @@
 
 #nullable disable
 
-namespace Ecommerce.Services.CouponAPI.Migrations
+namespace Ecommerce.Services.AuthAPI.Migrations
 {
     /// <inheritdoc />
     public partial class AddCouponToDb : Migration

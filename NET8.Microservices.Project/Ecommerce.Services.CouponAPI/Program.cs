@@ -1,6 +1,6 @@
 using AutoMapper;
-using Ecommerce.Services.CouponAPI;
-using Ecommerce.Services.CouponAPI.Data;
+using Ecommerce.Services.AuthAPI;
+using Ecommerce.Services.AuthAPI.Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

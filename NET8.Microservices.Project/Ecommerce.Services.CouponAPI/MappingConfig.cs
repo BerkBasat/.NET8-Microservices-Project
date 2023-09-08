@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using Ecommerce.Services.CouponAPI.DTO;
-using Ecommerce.Services.CouponAPI.Models;
+using Ecommerce.Services.AuthAPI.DTO;
+using Ecommerce.Services.AuthAPI.Models;
 
-namespace Ecommerce.Services.CouponAPI
+namespace Ecommerce.Services.AuthAPI
 {
     public class MappingConfig
     {

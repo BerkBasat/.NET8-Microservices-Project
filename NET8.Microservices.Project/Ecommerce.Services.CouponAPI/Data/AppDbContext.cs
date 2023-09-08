@@ -1,7 +1,7 @@
-﻿using Ecommerce.Services.CouponAPI.Models;
+﻿using Ecommerce.Services.AuthAPI.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Ecommerce.Services.CouponAPI.Data
+namespace Ecommerce.Services.AuthAPI.Data
 {
     public class AppDbContext : DbContext
     {
