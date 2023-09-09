@@ -45,5 +45,19 @@ namespace Ecommerce.Services.AuthAPI.Controllers
             _response.Result = loginResponse;
             return Ok(_response);
         }
+
+        [HttpPost("AssingRole")]
+        public async Task<IActionResult> AssingRole([FromBody] RegistrationRequestDTO model)
+        {
+            var assingRoleSuccessful = await _authService.AssingRole(model.Email, model.Role.ToUpper());
+
+            if (!assingRoleSuccessful)
+            {
+                _response.IsSuccess = false;
+                _response.Message = "Error Encountered!";
+                return BadRequest(_response);
+            }
+            return Ok(_response);
+        }
     }
 }

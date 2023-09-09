@@ -6,5 +6,6 @@ namespace Ecommerce.Services.AuthAPI.Service.IService
     {
         Task<string> Register(RegistrationRequestDTO registrationRequestDTO);
         Task<LoginResponseDTO> Login(LoginRequestDTO loginRequestDTO);
+        Task<bool> AssingRole(string email, string roleName);
     }
 }
