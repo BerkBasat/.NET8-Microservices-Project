@@ -10,7 +10,6 @@ namespace Ecommerce.Services.AuthAPI.Controllers
 {
     [Route("api/coupon")]
     [ApiController]
-    [Authorize]
     public class CouponAPIController : ControllerBase
     {
         private readonly AppDbContext _db;
@@ -78,6 +77,7 @@ namespace Ecommerce.Services.AuthAPI.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "ADMIN")]
         public ResponseDTO Create([FromBody] CouponDTO couponDTO)
         {
             try
@@ -98,6 +98,7 @@ namespace Ecommerce.Services.AuthAPI.Controllers
         }
 
         [HttpPut]
+        [Authorize(Roles = "ADMIN")]
         public ResponseDTO Put([FromBody] CouponDTO couponDTO)
         {
             try
@@ -119,6 +120,7 @@ namespace Ecommerce.Services.AuthAPI.Controllers
 
         [HttpDelete]
         [Route("{id:int}")]
+        [Authorize(Roles = "ADMIN")]
         public ResponseDTO Delete(int id)
         {
             try
