@@ -45,7 +45,7 @@ namespace Ecommerce.Web.Controllers
             }
             else
             {
-                ModelState.AddModelError("CustomError", responseDTO.Message);
+                TempData["error"] = responseDTO.Message;
                 return View(obj);
             }
         }
@@ -81,6 +81,10 @@ namespace Ecommerce.Web.Controllers
                     return RedirectToAction(nameof(Login));
                 }
             }
+            else
+            {
+                TempData["error"] = result.Message;
+            }
 
             var roleList = new List<SelectListItem>()
             {
@@ -110,6 +114,7 @@ namespace Ecommerce.Web.Controllers
             identity.AddClaim(new Claim(JwtRegisteredClaimNames.Email, jwt.Claims.FirstOrDefault(u => u.Type == JwtRegisteredClaimNames.Name).Value));
 
             identity.AddClaim(new Claim(ClaimTypes.Name, jwt.Claims.FirstOrDefault(u => u.Type == JwtRegisteredClaimNames.Email).Value));
+            identity.AddClaim(new Claim(ClaimTypes.Role, jwt.Claims.FirstOrDefault(u => u.Type == "role").Value));
 
             var principal = new ClaimsPrincipal(identity);
             await HttpContext.SignInAsync(CookieAuthenticationDefaults.AuthenticationScheme, principal);
