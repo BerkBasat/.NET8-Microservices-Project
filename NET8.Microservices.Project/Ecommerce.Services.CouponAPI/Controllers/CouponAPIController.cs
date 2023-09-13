@@ -10,6 +10,7 @@ namespace Ecommerce.Services.AuthAPI.Controllers
 {
     [Route("api/coupon")]
     [ApiController]
+    [Authorize(Roles = "ADMIN")]
     public class CouponAPIController : ControllerBase
     {
         private readonly AppDbContext _db;
@@ -24,6 +25,7 @@ namespace Ecommerce.Services.AuthAPI.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "ADMIN")]
         public ResponseDTO GetAll()
         {
             try
@@ -42,6 +44,7 @@ namespace Ecommerce.Services.AuthAPI.Controllers
 
         [HttpGet]
         [Route("{id:int}")]
+        [Authorize(Roles = "ADMIN")]
         public ResponseDTO Get(int id)
         {
             try
@@ -60,6 +63,7 @@ namespace Ecommerce.Services.AuthAPI.Controllers
 
         [HttpGet]
         [Route("GetByCode/{code}")]
+        [Authorize(Roles = "ADMIN")]
         public ResponseDTO GetByCode(string code)
         {
             try
