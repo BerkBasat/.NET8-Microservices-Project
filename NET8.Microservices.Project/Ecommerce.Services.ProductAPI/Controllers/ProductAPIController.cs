@@ -24,7 +24,6 @@ namespace Ecommerce.Services.ProductAPI.Controllers
         }
 
         [HttpGet]
-        [Authorize(Roles = "ADMIN")]
         public ResponseDTO GetAll()
         {
             try
@@ -43,7 +42,6 @@ namespace Ecommerce.Services.ProductAPI.Controllers
 
         [HttpGet]
         [Route("{id:int}")]
-        [Authorize(Roles = "ADMIN")]
         public ResponseDTO Get(int id)
         {
             try
