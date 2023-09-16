@@ -7,6 +7,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
+using Ecommerce.Services.ShoppingCartAPI.Service.IService;
+using Ecommerce.Services.ShoppingCartAPI.Service;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -41,6 +43,12 @@ builder.Services.AddSwaggerGen(option =>
 });
 
 builder.AddAppAuthentication();
+builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<ICouponService, CouponService>();
+builder.Services.AddHttpClient("Product", u => u.BaseAddress =
+new Uri(builder.Configuration["ServiceUrls:ProductAPI"]));
+builder.Services.AddHttpClient("Coupon", u => u.BaseAddress =
+new Uri(builder.Configuration["ServiceUrls:CouponAPI"]));
 
 builder.Services.AddDbContext<AppDbContext>(o =>
 {
