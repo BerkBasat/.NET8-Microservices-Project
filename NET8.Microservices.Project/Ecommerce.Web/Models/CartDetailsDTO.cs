@@ -1,7 +1,8 @@
-﻿namespace Ecommerce.Web.Models
+﻿
 using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
 
+namespace Ecommerce.Web.Models
 {
     public class CartDetailsDTO
     {

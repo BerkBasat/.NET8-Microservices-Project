@@ -37,3 +37,4 @@ C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Pr
 C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Web\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
 C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Web\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Web\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Web\bin\Debug\net8.0\IdentityModel.dll

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "7KCO/hISIi6JfJ1pBk3G9GtD7vExrYPAuN2HMw0qBffE1LfEj47vnHyh4WpBc0pJw2zx4766dFknXxHq4vwg5g==",
+  "dgSpecHash": "mR3ye/zzALTGyQF4OIuh2RU7UBSnsNBBz/R5oJVepdIIP6dAGABykmWgKxmFczT0OSkljxiIfGEwMPmWb5e0Fg==",
   "success": true,
   "projectFilePath": "C:\\Users\\Huawei\\Desktop\\Github\\.NET8-Microservices-Project\\NET8.Microservices.Project\\Ecommerce.Web\\Ecommerce.Web.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Huawei\\.nuget\\packages\\identitymodel\\6.2.0\\identitymodel.6.2.0.nupkg.sha512",
     "C:\\Users\\Huawei\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Huawei\\.nuget\\packages\\microsoft.identitymodel.abstractions\\7.0.0-preview\\microsoft.identitymodel.abstractions.7.0.0-preview.nupkg.sha512",
     "C:\\Users\\Huawei\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\7.0.0-preview\\microsoft.identitymodel.jsonwebtokens.7.0.0-preview.nupkg.sha512",
