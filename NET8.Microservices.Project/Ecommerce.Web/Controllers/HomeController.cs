@@ -1,3 +1,5 @@
+
+
 using Ecommerce.Web.Models;
 using Ecommerce.Web.Service.IService;
 using IdentityModel;
@@ -19,6 +21,8 @@ namespace Ecommerce.Web.Controllers
             _productService = productService;
             _cartService = cartService;
         }
+
+
 
         public async Task<IActionResult> Index()
         {
