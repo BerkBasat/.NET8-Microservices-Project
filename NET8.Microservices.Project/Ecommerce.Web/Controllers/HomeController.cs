@@ -1,5 +1,3 @@
-
-
 using Ecommerce.Web.Models;
 using Ecommerce.Web.Service.IService;
 using IdentityModel;
