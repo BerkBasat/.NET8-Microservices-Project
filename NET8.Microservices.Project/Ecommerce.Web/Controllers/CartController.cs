@@ -22,6 +22,43 @@ namespace Ecommerce.Web.Controllers
             return View(await LoadCartBasedOnUser());
         }
 
+        public async Task<IActionResult> Remove(int cartDetailsId)
+        {
+            var userId = User.Claims.Where(u => u.Type == JwtRegisteredClaimNames.Sub)?.FirstOrDefault()?.Value;
+            ResponseDTO? response = await _cartService.RemoveFromCartAsync(cartDetailsId);
+            if (response != null & response.IsSuccess)
+            {
+                TempData["success"] = "Cart Updated Successfully";
+                return RedirectToAction(nameof(CartIndex));
+            }
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> ApplyCoupon(CartDTO cartDTO)
+        {
+            ResponseDTO? response = await _cartService.ApplyCouponAsync(cartDTO);
+            if (response != null & response.IsSuccess)
+            {
+                TempData["success"] = "Cart Updated Successfully";
+                return RedirectToAction(nameof(CartIndex));
+            }
+            return View();
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> RemeveCoupon(CartDTO cartDTO)
+        {
+            cartDTO.CartHeader.CouponCode = "";
+            ResponseDTO? response = await _cartService.ApplyCouponAsync(cartDTO);
+            if (response != null & response.IsSuccess)
+            {
+                TempData["success"] = "Cart Updated Successfully";
+                return RedirectToAction(nameof(CartIndex));
+            }
+            return View();
+        }
+
         private async Task<CartDTO> LoadCartBasedOnUser()
         {
             var userId = User.Claims.Where(u => u.Type == JwtRegisteredClaimNames.Sub)?.FirstOrDefault()?.Value;
