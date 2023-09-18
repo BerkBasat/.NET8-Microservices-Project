@@ -10,7 +10,7 @@ namespace Ecommerce.Services.AuthAPI.Controllers
 {
     [Route("api/coupon")]
     [ApiController]
-    //[Authorize(Roles = "ADMIN")]
+    [Authorize]
     public class CouponAPIController : ControllerBase
     {
         private readonly AppDbContext _db;

@@ -20,7 +20,7 @@ namespace Ecommerce.Services.ShoppingCartAPI.Service
             var apiContent = await response.Content.ReadAsStringAsync();
             var res = JsonConvert.DeserializeObject<ResponseDTO>(apiContent);
 
-            if(res.IsSuccess)
+            if(res != null && res.IsSuccess)
             {
                 return JsonConvert.DeserializeObject<CouponDTO>(Convert.ToString(res.Result));
             }
