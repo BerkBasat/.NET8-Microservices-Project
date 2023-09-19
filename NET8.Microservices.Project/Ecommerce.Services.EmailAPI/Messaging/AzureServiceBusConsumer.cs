@@ -29,6 +29,7 @@ namespace Ecommerce.Services.EmailAPI.Messaging
         {
             _ecommerceCartProcessor.ProcessMessageAsync += OnEmailCartRequestReceived;
             _ecommerceCartProcessor.ProcessErrorAsync += ErrorHandler;
+            await _ecommerceCartProcessor.StartProcessingAsync();
         }
 
         public async Task Stop()

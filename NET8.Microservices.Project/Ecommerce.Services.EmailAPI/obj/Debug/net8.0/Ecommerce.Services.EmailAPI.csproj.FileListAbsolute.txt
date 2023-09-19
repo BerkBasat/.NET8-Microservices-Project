@@ -139,3 +139,7 @@ C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Pr
 C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Services.EmailAPI\obj\Debug\net8.0\Ecommerce.Services.EmailAPI.pdb
 C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Services.EmailAPI\obj\Debug\net8.0\Ecommerce.Services.EmailAPI.genruntimeconfig.cache
 C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Services.EmailAPI\obj\Debug\net8.0\ref\Ecommerce.Services.EmailAPI.dll
+C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Services.EmailAPI\bin\Debug\net8.0\Azure.Core.Amqp.dll
+C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Services.EmailAPI\bin\Debug\net8.0\Azure.Messaging.ServiceBus.dll
+C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Services.EmailAPI\bin\Debug\net8.0\Microsoft.Azure.Amqp.dll
+C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Services.EmailAPI\bin\Debug\net8.0\Newtonsoft.Json.dll
