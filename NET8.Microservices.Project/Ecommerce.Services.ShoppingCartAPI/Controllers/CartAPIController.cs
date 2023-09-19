@@ -63,7 +63,7 @@ namespace Ecommerce.Services.ShoppingCartAPI.Controllers
         {
             try
             {
-                await _messageBus.PublishMessage(cartDTO, _configuration.GetValue<string>("TopicAndQueueNames:EcommerceShoppingCart"));
+                await _messageBus.PublishMessage(cartDTO, _configuration.GetValue<string>("TopicAndQueueNames:EcommerceShoppingCartQueue"));
                 _response.Result = true;
             }
             catch (Exception ex)
