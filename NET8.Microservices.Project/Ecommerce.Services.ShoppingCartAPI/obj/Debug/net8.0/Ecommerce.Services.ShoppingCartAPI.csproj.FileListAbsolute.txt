@@ -140,3 +140,8 @@ C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Pr
 C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Services.ShoppingCartAPI\obj\Debug\net8.0\Ecommerce.Services.ShoppingCartAPI.genruntimeconfig.cache
 C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Services.ShoppingCartAPI\obj\Debug\net8.0\ref\Ecommerce.Services.ShoppingCartAPI.dll
 C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Services.ShoppingCartAPI\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Services.ShoppingCartAPI\bin\Debug\net8.0\Azure.Core.Amqp.dll
+C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Services.ShoppingCartAPI\bin\Debug\net8.0\Azure.Messaging.ServiceBus.dll
+C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Services.ShoppingCartAPI\bin\Debug\net8.0\Microsoft.Azure.Amqp.dll
+C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Services.ShoppingCartAPI\bin\Debug\net8.0\Ecommerce.MessageBus.dll
+C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Services.ShoppingCartAPI\bin\Debug\net8.0\Ecommerce.MessageBus.pdb
