@@ -1,6 +1,7 @@
 using Ecommerce.Services.EmailAPI.Data;
 using Ecommerce.Services.EmailAPI.Extension;
 using Ecommerce.Services.EmailAPI.Messaging;
+using Ecommerce.Services.EmailAPI.Services;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,6 +12,10 @@ builder.Services.AddDbContext<AppDbContext>(o =>
 {
     o.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
 });
+
+var optionBuilder = new DbContextOptionsBuilder<AppDbContext>();
+optionBuilder.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+builder.Services.AddSingleton(new EmailService(optionBuilder.Options));
 
 // We use singleton because we do not want a new object for different requests.
 builder.Services.AddSingleton<IAzureServiceBusConsumer, AzureServiceBusConsumer>();
