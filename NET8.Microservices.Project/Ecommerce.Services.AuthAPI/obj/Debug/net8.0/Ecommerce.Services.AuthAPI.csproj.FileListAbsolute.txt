@@ -140,3 +140,9 @@ C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Pr
 C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Services.AuthAPI\obj\Debug\net8.0\Ecommerce.Services.AuthAPI.pdb
 C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Services.AuthAPI\obj\Debug\net8.0\Ecommerce.Services.AuthAPI.genruntimeconfig.cache
 C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Services.AuthAPI\obj\Debug\net8.0\ref\Ecommerce.Services.AuthAPI.dll
+C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Services.AuthAPI\bin\Debug\net8.0\Azure.Core.Amqp.dll
+C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Services.AuthAPI\bin\Debug\net8.0\Azure.Messaging.ServiceBus.dll
+C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Services.AuthAPI\bin\Debug\net8.0\Microsoft.Azure.Amqp.dll
+C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Services.AuthAPI\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Services.AuthAPI\bin\Debug\net8.0\Ecommerce.MessageBus.dll
+C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Services.AuthAPI\bin\Debug\net8.0\Ecommerce.MessageBus.pdb
