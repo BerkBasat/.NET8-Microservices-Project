@@ -10,10 +10,12 @@ namespace Ecommerce.Web.Controllers
     public class CartController : Controller
     {
         private readonly ICartService _cartService;
+        private readonly IOrderService _orderService;
 
-        public CartController(ICartService cartService)
+        public CartController(ICartService cartService, IOrderService orderService)
         {
             _cartService = cartService;
+            _orderService = orderService;
         }
 
         [Authorize]
@@ -26,6 +28,26 @@ namespace Ecommerce.Web.Controllers
         public async Task<IActionResult> Checkout()
         {
             return View(await LoadCartBasedOnUser());
+        }
+
+        [HttpPost]
+        [ActionName("Checkout")]
+        public async Task<IActionResult> Checkout(CartDTO cartDTO)
+        {
+
+            CartDTO cart = await LoadCartBasedOnUser();
+            cart.CartHeader.Phone = cartDTO.CartHeader.Phone;
+            cart.CartHeader.Email = cartDTO.CartHeader.Email;
+            cart.CartHeader.Name = cartDTO.CartHeader.Name;
+
+            var response = await _orderService.CreateOrder(cart);
+            OrderHeaderDTO orderHeaderDTO = JsonConvert.DeserializeObject<OrderHeaderDTO>(Convert.ToString(response.Result));
+
+            if (response != null && response.IsSuccess)
+            {
+                //get stripe session and redirect to stripe to place order
+            }
+            return View();
         }
 
         public async Task<IActionResult> Remove(int cartDetailsId)

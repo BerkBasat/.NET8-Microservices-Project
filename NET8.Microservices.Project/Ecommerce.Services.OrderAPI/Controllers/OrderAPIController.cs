@@ -38,7 +38,7 @@ namespace Ecommerce.Services.OrderAPI.Controllers
                 orderHeaderDTO.Status = SD.Status_Pending;
                 orderHeaderDTO.OrderDetails = _mapper.Map<IEnumerable<OrderDetailsDTO>>(cartDto.CartDetails);
 
-                OrderHeader orderCreated = await _db.OrderHeaders.AddAsync(_mapper.Map<OrderHeader>(orderHeaderDTO)).Entity;
+                OrderHeader orderCreated = _db.OrderHeaders.Add(_mapper.Map<OrderHeader>(orderHeaderDTO)).Entity;
                 await _db.SaveChangesAsync();
 
                 orderHeaderDTO.OrderHeaderId = orderCreated.OrderHeaderId;
