@@ -9,6 +9,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Stripe.Checkout;
 using Stripe;
+using System.Data;
 
 namespace Ecommerce.Services.OrderAPI.Controllers
 {
@@ -107,6 +108,39 @@ namespace Ecommerce.Services.OrderAPI.Controllers
                 orderHeader.StripeSessionId = session.Id;
                 _db.SaveChanges();
                 _response.Result = stripeRequestDTO;
+            }
+            catch (Exception ex)
+            {
+                _response.Message = ex.Message;
+                _response.IsSuccess = false;
+            }
+            return _response;
+        }
+
+        [Authorize]
+        [HttpPost("ValidateStripeSession")]
+        public async Task<ResponseDTO> ValidateStripeSession([FromBody] int orderHeaderId)
+        {
+            try
+            {
+                OrderHeader orderHeader = _db.OrderHeaders.First(u => u.OrderHeaderId == orderHeaderId);
+
+                var service = new SessionService();
+                Session session = service.Get(orderHeader.StripeSessionId);
+
+                var paymentIntentService = new PaymentIntentService();
+                PaymentIntent paymentIntent = paymentIntentService.Get(session.PaymentIntentId);
+
+                if(paymentIntent.Status == "succeeded")
+                {
+                    //payment is successful
+                    orderHeader.PaymentIntentId = paymentIntent.Id;
+                    orderHeader.Status = SD.Status_Approved;
+                    _db.SaveChanges();
+
+                    _response.Result = _mapper.Map<OrderHeaderDTO>(orderHeader);
+                }
+
             }
             catch (Exception ex)
             {
