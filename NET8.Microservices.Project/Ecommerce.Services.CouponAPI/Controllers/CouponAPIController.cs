@@ -78,6 +78,7 @@ namespace Ecommerce.Services.AuthAPI.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "ADMIN")]
         public ResponseDTO Create([FromBody] CouponDTO couponDTO)
         {
             try
@@ -87,6 +88,17 @@ namespace Ecommerce.Services.AuthAPI.Controllers
                 _db.Coupons.Add(coupon);
                 _db.SaveChanges();
                 _response.Result = _mapper.Map<CouponDTO>(coupon);
+
+
+                var options = new Stripe.CouponCreateOptions
+                {
+                    AmountOff = (long)(couponDTO.DiscountAmount * 100),
+                    Name = couponDTO.CouponCode,
+                    Currency = "usd",
+                    Id = couponDTO.CouponCode
+                };
+                var service = new Stripe.CouponService();
+                service.Create(options);
             }
             catch (Exception ex)
             {
@@ -127,6 +139,9 @@ namespace Ecommerce.Services.AuthAPI.Controllers
                 Coupon coupon = _db.Coupons.First(x => x.CouponId == id);
                 _db.Coupons.Remove(coupon);
                 _db.SaveChanges();
+
+                var service = new Stripe.CouponService();
+                service.Delete(coupon.CouponCode);
             }
             catch (Exception ex)
             {

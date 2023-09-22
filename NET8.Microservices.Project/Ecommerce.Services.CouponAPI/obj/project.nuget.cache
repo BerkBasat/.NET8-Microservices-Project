@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ju3muTu2lcIJQhIRb64WHHfd69VKLYH+Q5kbQsZSYx36EVAJ2E/wGw0Eydvn7V5LOJ8rGq3GOxlK09SVIFF6dQ==",
+  "dgSpecHash": "2CIim6WYx2OKhUnK9dWtcsnOEse2H09QR7UR0XYbVDRjrBmpive5mJv/5Aox7Ag3mPT5HBTbiBfJUqJx5ZTjfw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Huawei\\Desktop\\Github\\.NET8-Microservices-Project\\NET8.Microservices.Project\\Ecommerce.Services.CouponAPI\\Ecommerce.Services.CouponAPI.csproj",
   "expectedPackageFiles": [
@@ -52,6 +52,8 @@
     "C:\\Users\\Huawei\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
     "C:\\Users\\Huawei\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
     "C:\\Users\\Huawei\\.nuget\\packages\\mono.texttemplating\\2.2.1\\mono.texttemplating.2.2.1.nupkg.sha512",
+    "C:\\Users\\Huawei\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\Huawei\\.nuget\\packages\\stripe.net\\42.6.0\\stripe.net.42.6.0.nupkg.sha512",
     "C:\\Users\\Huawei\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "C:\\Users\\Huawei\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "C:\\Users\\Huawei\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",
