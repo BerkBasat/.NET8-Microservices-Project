@@ -1,5 +1,6 @@
 ﻿using Ecommerce.Services.EmailAPI.Data;
 using Ecommerce.Services.EmailAPI.DTO;
+using Ecommerce.Services.EmailAPI.Message;
 using Ecommerce.Services.EmailAPI.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Text;
@@ -34,10 +35,16 @@ namespace Ecommerce.Services.EmailAPI.Services
             await LogAndEmail(message.ToString(), cartDTO.CartHeader.Email);
         }
 
+        public async Task LogOrderPlaced(RewardsMessage rewardsDTO)
+        {
+            string message = "New Order Placed. <br/> Order ID: " + rewardsDTO.OrderId;
+            await LogAndEmail(message, "ecommerce@gmail.com");
+        }
+
         public async Task RegisterUserEmailAndLog(string email)
         {
             string message = "User Registration Successful. <br/> Email: " + email;
-            await LogAndEmail(message, email);
+            await LogAndEmail(message, "ecommerce@gmail.com");
         }
 
         private async Task<bool> LogAndEmail(string message, string email)
