@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Huawei\\Desktop\\Github\\.NET8-Microservices-Project\\NET8.Microservices.Project\\Ecommerce.Web\\wwwroot\\js\\order.js",
+      "PackagePath": "staticwebassets\\js\\order.js"
+    },
+    {
       "Id": "C:\\Users\\Huawei\\Desktop\\Github\\.NET8-Microservices-Project\\NET8.Microservices.Project\\Ecommerce.Web\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },

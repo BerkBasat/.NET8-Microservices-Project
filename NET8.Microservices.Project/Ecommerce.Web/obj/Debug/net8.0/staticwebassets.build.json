@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Zn/8p/AGB0y8IVE35S9+ANTul5DNehiToFXSDeDOoFs=",
+  "Hash": "YiRZtRWGpAeLk+VdfDJhOnJKATF5nFNKQGJAZB3HHFY=",
   "Source": "Ecommerce.Web",
   "BasePath": "_content/Ecommerce.Web",
   "Mode": "Default",
@@ -91,6 +91,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Huawei\\Desktop\\Github\\.NET8-Microservices-Project\\NET8.Microservices.Project\\Ecommerce.Web\\wwwroot\\js\\order.js",
+      "SourceId": "Ecommerce.Web",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Huawei\\Desktop\\Github\\.NET8-Microservices-Project\\NET8.Microservices.Project\\Ecommerce.Web\\wwwroot\\",
+      "BasePath": "_content/Ecommerce.Web",
+      "RelativePath": "js/order.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\order.js"
     },
     {
       "Identity": "C:\\Users\\Huawei\\Desktop\\Github\\.NET8-Microservices-Project\\NET8.Microservices.Project\\Ecommerce.Web\\wwwroot\\js\\site.js",
