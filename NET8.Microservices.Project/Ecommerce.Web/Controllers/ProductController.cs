@@ -93,6 +93,7 @@ namespace Ecommerce.Web.Controllers
             return View(productDTO);
         }
 
+
         public async Task<IActionResult> ProductEdit(int productId)
         {
 
@@ -114,17 +115,19 @@ namespace Ecommerce.Web.Controllers
         [HttpPost]
         public async Task<IActionResult> ProductEdit(ProductDTO productDTO)
         {
-
-            ResponseDTO? response = await _productService.UpdateProductsAsync(productDTO);
-
-            if (response != null && response.IsSuccess)
+            if (ModelState.IsValid)
             {
-                TempData["success"] = "Product updated successfully!";
-                return RedirectToAction(nameof(ProductIndex));
-            }
-            else
-            {
-                TempData["error"] = response?.Message;
+                ResponseDTO? response = await _productService.UpdateProductsAsync(productDTO);
+
+                if (response != null && response.IsSuccess)
+                {
+                    TempData["success"] = "Product updated successfully!";
+                    return RedirectToAction(nameof(ProductIndex));
+                }
+                else
+                {
+                    TempData["error"] = response?.Message;
+                }
             }
 
             return View(productDTO);
