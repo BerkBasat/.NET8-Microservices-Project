@@ -139,3 +139,4 @@ C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Pr
 C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Services.ProductAPI\obj\Debug\net8.0\Ecommerce.Services.ProductAPI.pdb
 C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Services.ProductAPI\obj\Debug\net8.0\Ecommerce.Services.ProductAPI.genruntimeconfig.cache
 C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Services.ProductAPI\obj\Debug\net8.0\ref\Ecommerce.Services.ProductAPI.dll
+C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Services.ProductAPI\bin\Debug\net8.0\Ecommerce.Services.ProductAPI.staticwebassets.runtime.json
