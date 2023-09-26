@@ -42,15 +42,6 @@ namespace Ecommerce.Web.Service
             });
         }
 
-        public async Task<ResponseDTO?> GetProductAsync(string productCode)
-        {
-            return await _baseService.SendAsync(new RequestDTO()
-            {
-                ApiType = SD.ApiType.GET,
-                Url = SD.ProductAPIBase + "/api/product/GetByCode/" + productCode
-            });
-        }
-
         public async Task<ResponseDTO?> GetProductByIdAsync(int id)
         {
             return await _baseService.SendAsync(new RequestDTO()
