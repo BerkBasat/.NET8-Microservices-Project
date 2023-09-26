@@ -1,6 +1,7 @@
 ﻿using Ecommerce.Web.Models;
 using Ecommerce.Web.Service.IService;
 using Ecommerce.Web.Utility;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using System.Collections.Generic;
@@ -17,11 +18,13 @@ namespace Ecommerce.Web.Controllers
             _orderService = orderService;
         }
 
+        [Authorize]
         public IActionResult OrderIndex()
         {
             return View();
         }
 
+        [Authorize]
         public async Task<IActionResult> OrderDetail(int orderId)
         {
             OrderHeaderDTO orderHeaderDTO = new OrderHeaderDTO();
