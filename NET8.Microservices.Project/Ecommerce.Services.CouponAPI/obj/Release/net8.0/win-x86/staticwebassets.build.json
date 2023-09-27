@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "epCIcBH8fXZN6xMfzN49Oki5bVq5e6YYCTy9QzSvspY=",
+  "Source": "Ecommerce.Services.CouponAPI",
+  "BasePath": "_content/Ecommerce.Services.CouponAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

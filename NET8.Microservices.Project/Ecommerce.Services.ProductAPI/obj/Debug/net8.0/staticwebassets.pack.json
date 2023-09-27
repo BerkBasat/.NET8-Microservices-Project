@@ -1,6 +1,10 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\Huawei\\Desktop\\Github\\.NET8-Microservices-Project\\NET8.Microservices.Project\\Ecommerce.Services.ProductAPI\\wwwroot\\ProductImages\\1.jpg",
+      "PackagePath": "staticwebassets\\ProductImages\\1.jpg"
+    },
+    {
       "Id": "C:\\Users\\Huawei\\Desktop\\Github\\.NET8-Microservices-Project\\NET8.Microservices.Project\\Ecommerce.Services.ProductAPI\\wwwroot\\ProductImages\\10.jpg",
       "PackagePath": "staticwebassets\\ProductImages\\10.jpg"
     },
@@ -15,6 +19,10 @@
     {
       "Id": "C:\\Users\\Huawei\\Desktop\\Github\\.NET8-Microservices-Project\\NET8.Microservices.Project\\Ecommerce.Services.ProductAPI\\wwwroot\\ProductImages\\13.jpg",
       "PackagePath": "staticwebassets\\ProductImages\\13.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Huawei\\Desktop\\Github\\.NET8-Microservices-Project\\NET8.Microservices.Project\\Ecommerce.Services.ProductAPI\\wwwroot\\ProductImages\\3.jpg",
+      "PackagePath": "staticwebassets\\ProductImages\\3.jpg"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.Ecommerce.Services.ProductAPI.Microsoft.AspNetCore.StaticWebAssets.props",

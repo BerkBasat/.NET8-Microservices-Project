@@ -143,3 +143,4 @@ C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Pr
 C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Services.EmailAPI\bin\Debug\net8.0\Azure.Messaging.ServiceBus.dll
 C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Services.EmailAPI\bin\Debug\net8.0\Microsoft.Azure.Amqp.dll
 C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Services.EmailAPI\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Services.EmailAPI\bin\Debug\net8.0\appsettings.Production.json

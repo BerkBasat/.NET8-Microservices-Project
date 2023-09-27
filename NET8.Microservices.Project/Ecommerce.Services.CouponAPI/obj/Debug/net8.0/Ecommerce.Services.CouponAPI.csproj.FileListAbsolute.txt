@@ -141,3 +141,4 @@ C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Pr
 C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Services.CouponAPI\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Services.CouponAPI\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Services.CouponAPI\bin\Debug\net8.0\Stripe.net.dll
+C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Services.CouponAPI\bin\Debug\net8.0\appsettings.Production.json

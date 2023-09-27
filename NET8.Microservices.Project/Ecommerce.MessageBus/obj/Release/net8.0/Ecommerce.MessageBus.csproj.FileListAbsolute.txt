@@ -1,0 +1,13 @@
+C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.MessageBus\bin\Release\net8.0\Ecommerce.MessageBus.deps.json
+C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.MessageBus\bin\Release\net8.0\Ecommerce.MessageBus.dll
+C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.MessageBus\bin\Release\net8.0\Ecommerce.MessageBus.pdb
+C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.MessageBus\obj\Release\net8.0\Ecommerce.MessageBus.csproj.AssemblyReference.cache
+C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.MessageBus\obj\Release\net8.0\Ecommerce.MessageBus.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.MessageBus\obj\Release\net8.0\Ecommerce.MessageBus.AssemblyInfoInputs.cache
+C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.MessageBus\obj\Release\net8.0\Ecommerce.MessageBus.AssemblyInfo.cs
+C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.MessageBus\obj\Release\net8.0\Ecommerce.MessageBus.csproj.CoreCompileInputs.cache
+C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.MessageBus\obj\Release\net8.0\Ecommerce.MessageBus.sourcelink.json
+C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.MessageBus\obj\Release\net8.0\Ecommerce.MessageBus.dll
+C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.MessageBus\obj\Release\net8.0\refint\Ecommerce.MessageBus.dll
+C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.MessageBus\obj\Release\net8.0\Ecommerce.MessageBus.pdb
+C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.MessageBus\obj\Release\net8.0\ref\Ecommerce.MessageBus.dll

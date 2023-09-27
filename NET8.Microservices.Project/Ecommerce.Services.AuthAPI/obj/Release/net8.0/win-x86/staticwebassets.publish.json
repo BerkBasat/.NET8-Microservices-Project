@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "oYIf7KNsnHlYZZYcNz/fQ69fGYKlCwnlh2apQV2uMrs=",
+  "Source": "Ecommerce.Services.AuthAPI",
+  "BasePath": "_content/Ecommerce.Services.AuthAPI",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

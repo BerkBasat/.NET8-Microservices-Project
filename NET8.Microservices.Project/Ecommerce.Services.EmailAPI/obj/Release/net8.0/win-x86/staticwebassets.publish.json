@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "4ZlLLNhhk0/DNIGvR59q2TtGjL6spyM57dZihgLUf9E=",
+  "Source": "Ecommerce.Services.EmailAPI",
+  "BasePath": "_content/Ecommerce.Services.EmailAPI",
+  "Mode": "Default",
+  "ManifestType": "Publish",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
