@@ -11,6 +11,7 @@ using Ecommerce.Services.OrderAPI.Extensions;
 using Ecommerce.Services.OrderAPI.Utility;
 using Ecommerce.Services.OrderAPI.Service;
 using Ecommerce.Services.OrderAPI.Service.IService;
+using Ecommerce.Services.OrderAPI.RabbitMQSender;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -50,7 +51,7 @@ builder.Services.AddDbContext<AppDbContext>(o =>
 });
 
 builder.Services.AddScoped<IProductService, ProductService>();
-builder.Services.AddScoped<IMessageBus, MessageBus>();
+builder.Services.AddScoped<IRabbitMQOrderMessageSender, RabbitMQOrderMessageSender>();
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddScoped<BackendApiAuthenticationHttpClientHandler>();
 builder.Services.AddHttpClient("Product", u => u.BaseAddress =

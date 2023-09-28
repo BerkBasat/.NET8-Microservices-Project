@@ -3,6 +3,7 @@ using Ecommerce.MessageBus;
 using Ecommerce.Services.ShoppingCartAPI.Data;
 using Ecommerce.Services.ShoppingCartAPI.DTO;
 using Ecommerce.Services.ShoppingCartAPI.Models;
+using Ecommerce.Services.ShoppingCartAPI.RabbitMQSender;
 using Ecommerce.Services.ShoppingCartAPI.Service.IService;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -20,14 +21,14 @@ namespace Ecommerce.Services.ShoppingCartAPI.Controllers
         private IProductService _productService;
         private ICouponService _couponService;
         private IConfiguration _configuration;
-        private readonly IMessageBus _messageBus;
+        private readonly IRabbitMQCartMessageSender _messageBus;
         private ResponseDTO _response;
 
         public CartAPIController(AppDbContext db,
             IMapper mapper,
             IProductService productService,
             ICouponService couponService,
-            IMessageBus messageBus,
+            IRabbitMQCartMessageSender messageBus,
             IConfiguration configuration)
         {
             _db = db;
@@ -63,7 +64,7 @@ namespace Ecommerce.Services.ShoppingCartAPI.Controllers
         {
             try
             {
-                await _messageBus.PublishMessage(cartDTO, _configuration.GetValue<string>("TopicAndQueueNames:EcommerceShoppingCartQueue"));
+                _messageBus.SendMessage(cartDTO, _configuration.GetValue<string>("TopicAndQueueNames:EcommerceShoppingCartQueue"));
                 _response.Result = true;
             }
             catch (Exception ex)

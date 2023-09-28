@@ -11,6 +11,7 @@ using Ecommerce.Services.ShoppingCartAPI.Service.IService;
 using Ecommerce.Services.ShoppingCartAPI.Service;
 using Ecommerce.Services.ShoppingCartAPI.Utility;
 using Ecommerce.MessageBus;
+using Ecommerce.Services.ShoppingCartAPI.RabbitMQSender;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -47,7 +48,7 @@ builder.Services.AddSwaggerGen(option =>
 builder.AddAppAuthentication();
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<ICouponService, CouponService>();
-builder.Services.AddScoped<IMessageBus, MessageBus>();
+builder.Services.AddScoped<IRabbitMQCartMessageSender, RabbitMQCartMessageSender>();
 builder.Services.AddHttpContextAccessor();
 builder.Services.AddScoped<BackendApiAuthenticationHttpClientHandler>();
 builder.Services.AddHttpClient("Product", u => u.BaseAddress =

@@ -45,3 +45,4 @@ C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Pr
 C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.GatewaySolution\obj\Debug\net8.0\Ecommerce.GatewaySolution.genruntimeconfig.cache
 C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.GatewaySolution\obj\Debug\net8.0\ref\Ecommerce.GatewaySolution.dll
 C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.GatewaySolution\bin\Debug\net8.0\ocelot.json
+C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.GatewaySolution\bin\Debug\net8.0\ocelot.Production.json

@@ -12,6 +12,7 @@ using Stripe;
 using System.Data;
 using Ecommerce.MessageBus;
 using Microsoft.EntityFrameworkCore;
+using Ecommerce.Services.OrderAPI.RabbitMQSender;
 
 namespace Ecommerce.Services.OrderAPI.Controllers
 {
@@ -22,11 +23,11 @@ namespace Ecommerce.Services.OrderAPI.Controllers
         protected ResponseDTO _response;
         private readonly AppDbContext _db;
         private IProductService _productService;
-        private readonly IMessageBus _messageBus;
+        private readonly IRabbitMQOrderMessageSender _messageBus;
         private readonly IConfiguration _configuration;
         private IMapper _mapper;
 
-        public OrderAPIController(AppDbContext db, IProductService productService, IMapper mapper, IMessageBus messageBus, IConfiguration configuration)
+        public OrderAPIController(AppDbContext db, IProductService productService, IMapper mapper, IRabbitMQOrderMessageSender messageBus, IConfiguration configuration)
         {
             _db = db;
             this._response = new ResponseDTO();
@@ -225,7 +226,7 @@ namespace Ecommerce.Services.OrderAPI.Controllers
                         UserId = orderHeader.UserId
                     };
                     string topicName = _configuration.GetValue<string>("TopicAndQueueNames:OrderCreatedTopic");
-                    await _messageBus.PublishMessage(rewardsDTO, topicName);
+                    _messageBus.SendMessage(rewardsDTO, topicName);
                     _response.Result = _mapper.Map<OrderHeaderDTO>(orderHeader);
                 }
 
