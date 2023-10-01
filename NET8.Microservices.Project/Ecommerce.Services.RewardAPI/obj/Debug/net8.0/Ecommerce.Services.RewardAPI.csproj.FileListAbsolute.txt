@@ -144,3 +144,4 @@ C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Pr
 C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Services.RewardAPI\obj\Debug\net8.0\Ecommerce.Services.RewardAPI.genruntimeconfig.cache
 C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Services.RewardAPI\obj\Debug\net8.0\ref\Ecommerce.Services.RewardAPI.dll
 C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Services.RewardAPI\bin\Debug\net8.0\appsettings.Production.json
+C:\Users\Huawei\Desktop\Github\.NET8-Microservices-Project\NET8.Microservices.Project\Ecommerce.Services.RewardAPI\bin\Debug\net8.0\RabbitMQ.Client.dll
