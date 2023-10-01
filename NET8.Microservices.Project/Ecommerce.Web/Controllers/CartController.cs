@@ -133,7 +133,7 @@ namespace Ecommerce.Web.Controllers
         {
             var userId = User.Claims.Where(u => u.Type == JwtRegisteredClaimNames.Sub)?.FirstOrDefault()?.Value;
             ResponseDTO? response = await _cartService.GetCartByUserIdAsync(userId);
-            if(response != null && response.IsSuccess)
+            if(response.Result != null && response.IsSuccess)
             {
                 CartDTO cartDTO = JsonConvert.DeserializeObject<CartDTO>(Convert.ToString(response.Result));
                 return cartDTO;
